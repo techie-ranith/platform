@@ -12,10 +12,10 @@
   "author": "Anticrm Platform Contributors",
   "license": "EPL-2.0",
   "scripts": {
-    "build": "compile",
-    "build:docs": "api-extractor run --local",
+    "build": "node init && compile",
+    "build:docs": "node init && api-extractor run --local",
     "format": "format src",
-    "build:watch": "compile",
+    "build:watch": "node init && compile",
     "test": "jest --passWithNoTests --silent",
     "_phase:build": "compile transpile src",
     "_phase:test": "jest --passWithNoTests --silent",

@@ -13,4 +13,4 @@ module.exports = {
     'node_modules/(?!(franc-min|trigram-utils)/)'
   ],
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node']
-}
+};
