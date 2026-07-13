@@ -5,9 +5,9 @@
   "author": "Anticrm Platform Contributors",
   "license": "EPL-2.0",
   "scripts": {
-    "build": "compile ui",
-    "build:watch": "compile ui",
-    "build:docs": "api-extractor run --local",
+    "build": "node init && compile ui",
+    "build:watch": "node init && compile ui",
+    "build:docs": "node init && api-extractor run --local",
     "format": "format src",
     "svelte-check": "do-svelte-check",
     "test": "jest --passWithNoTests --silent",
