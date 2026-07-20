@@ -43,9 +43,9 @@
     "_phase:validate": "compile validate",
     "_phase:test": "jest --passWithNoTests --silent",
     "_phase:format": "format src",
-    "build": "compile",
-    "build:watch": "compile",
-    "build:docs": "",
+    "build": "node init && compile",
+    "build:watch": "node init && compile",
+    "build:docs": "node init && ",
     "test": "jest --passWithNoTests --silent",
     "format": "format src"
   },

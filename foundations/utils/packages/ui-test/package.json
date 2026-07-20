@@ -1,7 +1,7 @@
 {
   "name": "@hcengineering/ui-test",
   "version": "0.7.13",
-  "author": "Copyright © Hardcore Engineering Inc.",
+  "author": "Copyright \u00a9 Hardcore Engineering Inc.",
   "template": "@hcengineering/node-package",
   "license": "EPL-2.0",
   "main": "./lib/index.js",
@@ -22,8 +22,8 @@
     "./styles/*": "./styles/*"
   },
   "scripts": {
-    "build": "compile ui-esbuild",
-    "build:watch": "compile ui-esbuild",
+    "build": "node init && compile ui-esbuild",
+    "build:watch": "node init && compile ui-esbuild",
     "test": "jest --passWithNoTests --silent --forceExit",
     "format": "format src",
     "_phase:build": "compile ui-esbuild",
