@@ -2,7 +2,7 @@
   "name": "@hcengineering/platform-rig",
   "version": "0.7.21",
   "scripts": {
-    "build": "echo 'Not required'",
+    "build": "node init && echo 'Not required'",
     "format": "echo 'Not required'"
   },
   "exports": {
