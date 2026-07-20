@@ -19,9 +19,9 @@
     "_phase:validate": "compile validate",
     "_phase:test": "jest --passWithNoTests --silent",
     "_phase:format": "format src",
-    "build": "compile",
+    "build": "node init && compile",
     "test": "jest --passWithNoTests --silent",
-    "build:watch": "compile",
+    "build:watch": "node init && compile",
     "format": "format src"
   },
   "peerDependencies": {
