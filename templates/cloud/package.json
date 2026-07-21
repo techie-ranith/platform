@@ -9,16 +9,16 @@
   ],
   "scripts": {
     "deploy": "wrangler deploy",
-    "dev": "wrangler dev --port 4021",
-    "start": "wrangler dev --port 4021",
+    "dev": "node init && wrangler dev --port 4021",
+    "start": "node init && wrangler dev --port 4021",
     "cf-typegen": "wrangler types",
     "_phase:build": "compile transpile src",
     "_phase:validate": "compile validate",
     "_phase:test": "jest --passWithNoTests --silent --forceExit",
     "_phase:format": "format src",
-    "build": "compile",
+    "build": "node init && compile",
     "test": "jest --passWithNoTests --silent --forceExit",
-    "build:watch": "compile",
+    "build:watch": "node init && compile",
     "format": "format src"
   },
   "peerDependencies": {
