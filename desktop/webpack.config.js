@@ -369,4 +369,4 @@ module.exports = [
     },
     devtool: prod ? 'source-map' : 'eval-source-map' // 'inline-source-map',
   }
-]
+];

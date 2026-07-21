@@ -5,4 +5,4 @@ module.exports = {
   roots: ['./src'],
   coverageReporters: ['text-summary', 'html', 'lcov'],
   testTimeout: 10000 // 10 seconds timeout for all tests
-}
+};
