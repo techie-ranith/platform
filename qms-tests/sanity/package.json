@@ -8,8 +8,8 @@
   "template": "@hcengineering/default-package",
   "license": "EPL-2.0",
   "scripts": {
-    "build": "compile",
-    "build:watch": "compile",
+    "build": "node init && compile",
+    "build:watch": "node init && compile",
     "_phase:build": "compile transpile tests",
     "_phase:test": "",
     "_phase:format": "format src",
@@ -22,11 +22,11 @@
     "uitest": "cross-env LOCAL_URL=http://huly.local:3003/ DEV_URL= playwright test -c ./tests/playwright.config.ts --grep-invert @PDF",
     "uitest-pdf": "cross-env LOCAL_URL=http://huly.local:3003/ DEV_URL= playwright test -c ./tests/playwright.config.ts --grep @PDF",
     "staging-uitest": "cross-env PLATFORM_URI=https://front.hc.engineering/ playwright test -c ./tests/playwright.config.ts --grep @staging --grep-invert @PDF",
-    "dev-uitest": "cross-env PLATFORM_URI=http://localhost:8081 PLATFORM_TRANSACTOR=ws://localhost:3333 DEV_URL=http://localhost:8080/account playwright test -c ./tests/playwright.config.ts --grep-invert @PDF",
+    "dev-uitest": "node init && cross-env PLATFORM_URI=http://localhost:8081 PLATFORM_TRANSACTOR=ws://localhost:3333 DEV_URL=http://localhost:8080/account playwright test -c ./tests/playwright.config.ts --grep-invert @PDF",
     "debug": "playwright test -c ./tests/playwright.config.ts --debug --headed",
-    "dev-debug": "cross-env PLATFORM_URI=http://localhost:8081 PLATFORM_TRANSACTOR=ws://huly.local:3333 playwright test -c ./tests/playwright.config.ts --debug --headed",
+    "dev-debug": "node init && cross-env PLATFORM_URI=http://localhost:8081 PLATFORM_TRANSACTOR=ws://huly.local:3333 playwright test -c ./tests/playwright.config.ts --debug --headed",
     "codegen": "playwright codegen --load-storage storage.json http://huly.local:8083/workbench/sanity-ws/",
-    "dev-codegen": "cross-env playwright codegen --load-storage storage-dev.json http://localhost:8080/workbench/sanity-ws/",
+    "dev-codegen": "node init && cross-env playwright codegen --load-storage storage-dev.json http://localhost:8080/workbench/sanity-ws/",
     "allure:generate": "allure generate allure-results -o allure-report --clean"
   },
   "devDependencies": {

@@ -5,13 +5,13 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "run:basic": "ts-node 01-basic-container-request-response.ts",
-    "run:events": "ts-node 02-event-broadcasting.ts",
-    "run:multi-tenant": "ts-node 03-multi-tenant.ts",
-    "run:production": "ts-node 04-complete-production-setup.ts",
-    "run:retry": "ts-node 05-error-handling-retry.ts",
-    "run:timeout": "ts-node custom-timeout-example.ts",
-    "run:ha": "ts-node ha-stateless-container-example.ts"
+    "run:basic": "node init && ts-node 01-basic-container-request-response.ts",
+    "run:events": "node init && ts-node 02-event-broadcasting.ts",
+    "run:multi-tenant": "node init && ts-node 03-multi-tenant.ts",
+    "run:production": "node init && ts-node 04-complete-production-setup.ts",
+    "run:retry": "node init && ts-node 05-error-handling-retry.ts",
+    "run:timeout": "node init && ts-node custom-timeout-example.ts",
+    "run:ha": "node init && ts-node ha-stateless-container-example.ts"
   },
   "keywords": [
     "huly",

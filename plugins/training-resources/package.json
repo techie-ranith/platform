@@ -4,8 +4,8 @@
   "main": "src/index.ts",
   "author": "Hardcore Engineering Inc",
   "scripts": {
-    "build": "compile ui",
-    "build:watch": "compile ui",
+    "build": "node init && compile ui",
+    "build:watch": "node init && compile ui",
     "format": "format src",
     "svelte-check": "do-svelte-check",
     "_phase:build": "compile ui",

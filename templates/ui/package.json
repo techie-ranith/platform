@@ -9,8 +9,8 @@
     "_phase:build": "compile ui",
     "_phase:validate": "compile validate",
     "_phase:format": "format src",
-    "build": "compile ui",
-    "build:watch": "compile ui",
+    "build": "node init && compile ui",
+    "build:watch": "node init && compile ui",
     "format": "format src"
   },
   "devDependencies": {
