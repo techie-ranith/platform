@@ -26,4 +26,4 @@ module.exports = {
   ],
   roots: ["./src", "./tests"],
   coverageReporters: ["text-summary", "html"],
-}
+};

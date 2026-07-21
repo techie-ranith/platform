@@ -1,0 +1,33 @@
+{
+  "default_branch": "develop",
+  "branches": [
+    "cursor-api",
+    "develop",
+    "feat-print-stability",
+    "fix-publish-2",
+    "mobile-app",
+    "origin",
+    "staging-new",
+    "validate-workspace"
+  ],
+  "parent": {
+    "cursor-api": "develop",
+    "develop": null,
+    "feat-print-stability": "develop",
+    "fix-publish-2": "develop",
+    "mobile-app": "develop",
+    "origin": "develop",
+    "staging-new": "develop",
+    "validate-workspace": "develop"
+  },
+  "order": [
+    "develop",
+    "cursor-api",
+    "feat-print-stability",
+    "fix-publish-2",
+    "mobile-app",
+    "origin",
+    "staging-new",
+    "validate-workspace"
+  ]
+}
