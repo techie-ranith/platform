@@ -505,4 +505,4 @@ module.exports = [
       proxy: proxy[clientType]
     }
   }
-]
+];
