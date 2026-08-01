@@ -4,10 +4,10 @@
   "main": "src/index.ts",
   "author": "Hardcore Engineering Inc.",
   "scripts": {
-    "build": "compile ui",
-    "build:docs": "api-extractor run --local",
+    "build": "node init && compile ui",
+    "build:docs": "node init && api-extractor run --local",
     "format": "format src",
-    "build:watch": "compile ui",
+    "build:watch": "node init && compile ui",
     "_phase:build": "compile ui",
     "_phase:format": "format src",
     "_phase:validate": "compile validate",
