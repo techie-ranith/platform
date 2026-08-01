@@ -12,9 +12,9 @@
   "author": "Anticrm Platform Contributors",
   "license": "EPL-2.0",
   "scripts": {
-    "build": "compile",
+    "build": "node init && compile",
     "test": "jest --passWithNoTests --silent",
-    "build:watch": "compile",
+    "build:watch": "node init && compile",
     "format": "format src",
     "_phase:build": "compile transpile src",
     "_phase:test": "jest --passWithNoTests --silent",
