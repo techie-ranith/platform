@@ -9,4 +9,4 @@ module.exports = {
     // Tests that need richer UI stubs override this via their own jest.mock().
     '^@hcengineering/ui$': '<rootDir>/node_modules/@hcengineering/ui/src/colors.ts'
   }
-}
+};

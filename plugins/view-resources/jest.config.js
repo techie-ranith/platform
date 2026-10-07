@@ -9,4 +9,4 @@ module.exports = {
   moduleNameMapper: {
     '^svelte/store$': '<rootDir>/src/__mocks__/svelte-store.ts'
   }
-}
+};
