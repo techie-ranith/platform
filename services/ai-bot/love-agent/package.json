@@ -12,7 +12,7 @@
   ],
   "type": "module",
   "scripts": {
-    "build": "node esbuild.config.js",
+    "build": "node init && node esbuild.config.js",
     "docker:build": "node ../../../common/scripts/bash.js ../../../common/scripts/docker_build.sh hardcoreeng/love-agent",
     "docker:push": "node ../../../common/scripts/bash.js ../../../common/scripts/docker_tag.sh hardcoreeng/love-agent",
     "lint": "eslint src/**/*.ts",
