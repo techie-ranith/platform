@@ -5,7 +5,7 @@
   "author": "Anticrm Platform Contributors",
   "license": "EPL-2.0",
   "scripts": {
-    "build": "echo \"No build specified\"",
+    "build": "node init && echo \"No build specified\"",
     "format": "echo \"No format specified\"",
     "storybook": "storybook dev -p 6006",
     "test": "echo \"No test specified\""
